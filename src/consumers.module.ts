@@ -15,8 +15,8 @@ import { MailerModule } from '@nestjs-modules/mailer';
         host: 'smtp.ethereal.email',
         port: 587,
         auth: {
-          user: 'litzy.witting60@ethereal.email',
-          pass: 'e149tYTf9aJUv6VrCx',
+          user: 'eulalia.boyle54@ethereal.email',
+          pass: '3XHH6EdmaTczXKC4gh',
         },
       },
     }),

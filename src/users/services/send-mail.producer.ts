@@ -11,6 +11,6 @@ export interface ISendProductsMail {
 export class SendMailProducer {
   constructor(@InjectQueue('sendmail-queue') private queue: Queue) {}
   async enqueue(dataOptions: ISendProductsMail) {
-    this.queue.add('sendmail-job', dataOptions);
+    this.queue.add('sendmail-job', dataOptions, { backoff: 1000, attempts: 3 });
   }
 }
